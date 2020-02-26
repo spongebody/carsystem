@@ -2,6 +2,7 @@
   "name": "frosui-base-vue-cli-3.0",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sponge/carsystem",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -10,7 +11,8 @@
     "lint": "vue-cli-service lint",
     "analyze": "ANALYZE=true vue-cli-service build",
     "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "core-js": "^2.6.5",
