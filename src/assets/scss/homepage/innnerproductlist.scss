@@ -1,0 +1,115 @@
+@import "../base/params";
+
+.inner-line-wrp{
+  height: 132px;
+  background-color: $color-f4;
+  .inner-line-item{
+    height: 102px;
+    background-color: $color-gf;
+    display: flex;
+    padding-right: 20px;
+    transition: .3s;
+    &:hover{
+      background-color: $light-blue;
+      cursor: pointer;
+    }
+  }
+}
+
+.ship-info{
+  width: 110px;
+  text-align: center;
+  margin-top: 22px;
+  .ship-name{
+    font-size: 14px;
+    color: $color-g8;
+    padding: 0 10px;
+    max-width: 90px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    margin: 0 auto;
+  }
+  .ship-line-num{
+    font-size: 12px;
+    color: $regular-blue;
+  }
+}
+
+.line-company{
+  font-size: 18px;
+  color: $color-g6;
+  margin-top: 18px;
+}
+
+.trans-item{
+  font-size: 14px;
+  color: $color-g8;
+}
+
+.line-pub-date{
+  color: $main-blue;
+  font-size: 14px;
+  .able-date{
+    margin-left: 20px;
+  }
+}
+
+.line-start-end{
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  padding-top: 24px;
+}
+
+.start-port-name{
+  font-size: 18px;
+  color: $regular-blue;
+  line-height: 25px;
+  .port-point{
+    margin-right: 6px;
+    font-size: 14px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: $main-blue;
+    color: $color-gf;
+    border-radius: 505%;
+  }
+}
+
+.end-port-name{
+  font-size: 18px;
+  color: $regular-blue;
+  line-height: 25px;
+  .port-point{
+    margin-right: 6px;
+    font-size: 14px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: $deep-red;
+    color: $color-gf;
+    border-radius: 50%;
+  }
+}
+
+.start-port-date, .end-port-date{
+  color: $regular-blue;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.arrow-logo{
+  margin-right: 50px;
+  margin-top: 5px;
+}
+
+.inner-line-list-wrp{
+  min-height: 120px;
+}

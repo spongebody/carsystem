@@ -1,0 +1,136 @@
+@import "../base/params";
+
+.com-page{
+  padding-top: 84px;
+  &.mg-detail{
+    padding-top: 0;
+  }
+}
+
+.step-ctx{
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.register-ctx{
+  width: 1200px;
+  background-color: $color-gf;
+  padding: 32px 32px;
+  margin: 0 auto;
+  margin-top: 24px;
+  &.auto{
+    overflow: auto;
+  }
+}
+
+.mg-detail{
+  .register-ctx{
+    width: 100%;
+    margin-top: 0;
+    padding: 18px;
+  }
+  .register-form{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .register-main-ctx{
+    width: 640px;
+  }
+}
+
+.register-title{
+  font-size: 20px;
+  text-align: center;
+  color: $color-g0;
+  border-bottom: 1px dashed $main-blue;
+  padding-bottom: 12px;
+  font-weight: bold;
+}
+
+.register-form{
+  width: 640px;
+  margin: 0 auto;
+  margin-top: 32px;
+  &.no-top{
+    margin-top: 0;
+  }
+}
+
+.register-btn{
+  width: 640px;
+  margin: 0 auto;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.verify-btn{
+  width: 112px;
+  text-align: center;
+}
+
+.get-code-btn{
+  text-align: right;
+}
+
+.register-com-title{
+  line-height: 36px;
+  border-bottom: 1px solid $color-e4;
+  .register-title-child{
+    color: $main-blue;
+    display: inline-block;
+    padding: 0 16px;
+  }
+}
+
+.register-main-ctx{
+  padding: 12px;
+}
+
+.register-success{
+  width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 100px;
+  .success-icon{
+    font-size: 72px;
+    color: $main-green;
+    margin-top: 24px;
+  }
+  .success-text{
+    font-size: 18px;
+    color: $color-g0;
+    margin-top: 12px;
+  }
+  .last-second{
+    font-size: 14px;
+    margin-top: 6px;
+  }
+}
+
+.bind-verify-img{
+  height: 29px;
+  border-radius: 4px;
+  border: 1px solid rgba($color-e4, 0);
+}
+
+.bind-account{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  .wechat-avatar-img{
+    width: 88px;
+    height: 88px;
+    display: block;
+    border-radius: 44px;
+    margin: 0 auto;
+  }
+  .wechat-nickname{
+    .wechat-nickname-text{
+      margin-top: 4px;
+      color: $color-g0;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+@import "../base/params";
+
+.el-carousel{
+  position: unset;
+}
+
+.swiper-image{
+  position: relative;
+  .el-carousel__indicators--horizontal{
+    bottom: -26px;
+    .el-carousel__indicator--horizontal{
+      .el-carousel__button{
+        background-color: $main-blue;
+        width: 14px;
+      }
+    }
+  }
+}
+
+.block-link{
+  display: block;
+}
+
+.file-cp{
+  .file-row{
+    display: flex;
+    .file-name{
+      flex: 1;
+      color: $color-g0;
+    }
+    a{
+      color: $main-blue;
+    }
+    .upload-btn{
+      padding: 0;
+      margin-left: 10px;
+      font-weight: normal;
+    }
+  }
+}
+
+.img-title{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  padding: 0 12px;
+}
+
+.flextrans-table .el-table th{
+  padding: 4px 0;
+  background-color: $color-f5;
+  font-size: 12px;
+}
+
+.flextrans-table .el-table td{
+  padding: 4px 0;
+  font-size: 12px;
+}
+
+.good-type-item{
+  display: inline-block;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 8px;
+  color: $color-gf;
+  border-radius: 10px;
+  &.green{
+    background-color: $main-green;
+  }
+  &.orange{
+    background-color: $main-orange;
+  }
+}
+
+.search-header{
+  background-color: $color-gf;
+  padding-top: 14px;
+  .search-input{
+    padding: 12px 0;
+    .el-input{
+      display: inline-block;
+      width: 195px;
+      input{
+        border-radius: 14px;
+        width: 195px;
+      }
+    }
+  }
+  .query-btn{
+    padding: 0 10px;
+  }
+}
+
+.carship-query{
+  .el-input{
+    width: 100%;
+    margin-top: 10px;
+    input{
+      border-radius: 14px;
+      width: 100%;
+    }
+  }
+}
+
+.register-ctx{
+  .el-form-item__label{
+    color: $color-g0;
+  }
+  &.auto{
+    overflow: auto;
+  }
+}
+

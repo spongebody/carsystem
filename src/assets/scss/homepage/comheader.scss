@@ -1,0 +1,271 @@
+@import "../base/params";
+
+.com-user-header{
+  background-color: $color-gf;
+  &.fixed{
+    width: 100%;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid $color-e4;
+  }
+}
+
+.com-user-header-grey{
+  height: 30px;
+  background-color: $color-e4;
+  line-height: 30px;
+}
+
+.com-main-ctx{
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.nav-wrp{
+  display: flex;
+  color: $color-gf;
+  line-height: 34px;
+  position: unset;
+  .nav-item{
+    cursor: pointer;
+    &.cur{
+      background-color: rgba($color-gf, 0.4);
+    }
+    &:hover{
+      background-color: rgba($color-gf, 0.4);
+      .sys-child{
+        display: block;
+      }
+    }
+    .nav-item-url{
+      padding: 0 16px;
+      display: block;
+    }
+  }
+  a{
+    color: $color-gf;
+  }
+}
+
+.com-user-header-grey{
+  text-align: right;
+  font-size: 12px;
+  .iconfont{
+    font-size: 12px;
+    &.fros-icon-biaotou-daoxu{
+      margin-left: 4px;
+    }
+  }
+}
+
+.com-header-logo{
+  width: 180px;
+  height: 94px;
+  background-color: $light-blue;
+  position: absolute;
+  top: -30px;
+  text-align: center;
+  img{
+    width: 116px;
+    position: relative;
+    top: 50%;
+    margin-top: -22px;
+  }
+}
+
+.com-user-header-ctx{
+  height: 64px;
+}
+
+.com-header-nav{
+  height: 34px;
+  background-color: $main-blue;
+}
+
+.header-op-wrp{
+  display: flex;
+  justify-content: flex-end;
+  .header-op{
+    padding: 0 10px;
+    cursor: pointer;
+    &.gold-text{
+      color: $color-deepgold;
+    }
+    &.nohover{
+      &:hover{
+        background-color: unset;
+        color: unset;
+      }
+    }
+    &:hover{
+      background-color: $color-gf;
+      color: $main-blue;
+    }
+    .fros-icon-HAMBURGERMENU{
+      color: $main-blue;
+      margin-right: 6px;
+    }
+  }
+}
+
+.com-user-header-grey .fros-icon-weixin{
+  font-size: 14px;
+}
+
+.search-box{
+  display: flex;
+}
+
+.search-box-wrp{
+  width: 550px;
+  height: 36px;
+  border-radius: 18px;
+  border: 2px solid $main-blue;
+  margin-left: 234px;
+  line-height: 32px;
+}
+
+.search-input{
+  flex: 1;
+  input{
+    width: 100%;
+    border: 0;
+  }
+}
+
+.search-btn{
+  width: 84px;
+  text-align: center;
+  border-radius: 0 18px 18px 0;
+  background-image: linear-gradient( 90deg, rgb(44,95,173) 0%, rgb(24,66,130) 100%);
+  cursor: pointer;
+  color: $color-gf;
+  margin-top: -1px;
+  &:hover{
+    opacity: 0.95;
+  }
+  .fros-icon-sousuo{
+    font-size: 18px;
+  }
+}
+
+.search-wrp{
+  padding-top: 22px;
+}
+
+.pick-item{
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+  padding: 0 16px;
+  &:hover{
+    background-color: $light-blue;
+  }
+}
+
+.hot-keyword{
+  line-height: 30px;
+  span{
+    font-size: 12px;
+    margin-right: 10px;
+    color: #999;
+    cursor: pointer;
+    &:hover{
+      color: $main-blue;
+    }
+  }
+}
+
+.sys-name{
+  font-size: 16px;
+  color: #000;
+  line-height: 1.5;
+}
+
+.sys-child{
+  width: 100%;
+  position: absolute;
+  background-color: $light-blue;
+  padding: 14px 0;
+  z-index: 99;
+  left: 0;
+  display: none;
+}
+
+.sys-block{
+  padding: 0 24px;
+  border-right: 1px solid #ddd;
+  height: 74px;
+  &.no-border{
+    border-right: 0;
+  }
+}
+
+.sys-child-ctx{
+  display: flex;
+}
+
+.child-sys-item{
+  min-width: 195px;
+  margin-top: 7px;
+}
+
+.child-sys-item li {
+  margin-right: 12px;
+  margin-bottom: 5px;
+  line-height: 1.2;
+  a{
+    font-size: 12px;
+    color: $color-g6;
+    &:hover{
+      color: $main-blue;
+    }
+  }
+  &.more-sys{
+    a{
+      color: $main-blue;
+    }
+  }
+  float: left;
+}
+
+.more-sys{
+  a{
+    color: $main-blue;
+  }
+}
+
+.site-list-wrp{
+  padding: 0 6px;
+  .site-item{
+    display: flex;
+    font-size: 12px;
+    line-height: 28px;
+    padding: 10px 0;
+    border-bottom: 1px dashed $color-e4;
+    &:last-child{
+      border-bottom: 0;
+    }
+    .site-title{
+      padding-right: 24px;
+      color: $color-g0;
+    }
+    .site-item-list{
+      flex: 1;
+      line-height: 28px;
+      color: $color-g7;
+      span{
+        display: inline-block;
+        margin-right: 18px;
+        padding: 0 6px;
+        &:hover{
+          cursor: pointer;
+          color: $main-blue;
+        }
+      }
+    }
+  }
+}

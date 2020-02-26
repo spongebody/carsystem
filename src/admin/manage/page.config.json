@@ -1,0 +1,15 @@
+{
+  "title": "用车系统",
+  "externals": {
+    "polyfill": {
+      "type": "js",
+      "url": [
+        "/static/js/fros.polyfill.js"
+      ]
+    },
+    "apiconfig": {
+      "type": "js",
+      "url": []
+    }
+  }
+}
